@@ -114,5 +114,3 @@ This program build with Javascript + [CreateJS](http://www.createjs.com).
 3. 点击右下角的go live，vscode会自动在后台开启一个进程运行server，注意如果要关闭的话得再点击一下，关闭网页是没有用的
 4. 然后再vscode的debug里点击一下就可以开始debug这个项目了
 
-### NOTES
-1. 游戏的入口函数应该是在`lodeRunner.main.js`里面，可以从这里开始调试

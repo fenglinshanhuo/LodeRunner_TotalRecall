@@ -9,7 +9,7 @@ var demoRnd, demoIdx;
 function initAutoDemoRnd()
 {
 	demoRnd = [];
-	demoRnd[0] = new rangeRandom(0, demoData1.length-1, 0); //random range 0 .. demoData1.length-1
+	demoRnd[0] = new rangeRandom(0, demoData2.length-1, 0); //random range 0 .. demoData1.length-1
 }
 
 var demoRecord, demoGoldDrop, demoBornPos;
@@ -22,7 +22,7 @@ function getAutoDemoLevel(initValue)
 		demoLevel = 1;
 		demoCount = 1;
 		demoMaxCount = 3;
-		demoData = demoData1;
+		demoData = demoData2;
 		levelData = playVersionInfo[0].verData;
 		demoIdx = 0;
 	} else {
