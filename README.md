@@ -92,3 +92,27 @@ This program build with Javascript + [CreateJS](http://www.createjs.com).
 <a target="_blank" href="http://loderunnerwebgame.com/game/">http://loderunnerwebgame.com/game/</a>
 
 ------------------------------------
+
+
+### vs-code debug 方式
+1. vs-code安装live-server
+2. 填写配置文件如下
+```
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "chrome 调试",
+            "url": "http://localhost:5500",
+            "webRoot": "${workspaceFolder}"
+        }
+    ]
+}
+```
+3. 点击右下角的go live，vscode会自动在后台开启一个进程运行server，注意如果要关闭的话得再点击一下，关闭网页是没有用的
+4. 然后再vscode的debug里点击一下就可以开始debug这个项目了
+
+### NOTES
+1. 游戏的入口函数应该是在`lodeRunner.main.js`里面，可以从这里开始调试
